@@ -1,0 +1,162 @@
+@media screen and (min-width: 425px) {
+    .trainer-photo {
+        height: 350px; 
+        width: 300px; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 480px;
+        margin: 0px auto; 
+    }
+
+    .info-date {
+        width: 45%; 
+    }
+
+    .invitation-org {
+        margin-left: 50%; 
+    }
+
+    .about-t {
+        width: 100%; 
+    }
+
+    .about-trainer {
+        display: grid; 
+        grid-template-columns: 233px auto;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: "trainer-photo trainer-name trainer-name"
+                            "trainer-photo trainer-history trainer-history"; 
+    }
+
+   .trainer-photo {
+       grid-area: trainer-photo;
+       width: 233px; 
+       height: 300px; 
+   }
+
+   .trainer1 {
+    background-image: url('img/french.jpg');   
+    }
+
+    .trainer2 {
+    background-image: url('img/liszka.jpg');    
+    }
+
+    .trainer3 {
+        background-image: url('img/rosloniec.jpg');    
+    }
+
+   .trainer-name {
+       grid-area: trainer-name; 
+       font-size: 1.2em; 
+       text-align: left; 
+   }
+
+   .trainer-history {
+       grid-area: trainer-history;
+   }
+       
+   .program {
+     background-size: cover;
+     background-position-x: 0;
+   }
+
+   .register-text-big {
+       font-size: 26px;
+   }
+}
+
+@media screen and (min-width: 960px) {
+    .container {
+        width: 768px; 
+        margin: 0 auto; 
+    }
+
+    .mobile-nav, .hamburger {
+        display: none;
+    }
+
+    .info-date {
+        width: 35%; 
+    }
+
+    .nav-links {
+        display: flex; 
+        justify-content: space-between; 
+        min-width: 30%; 
+        max-width: 70%; 
+    }
+        
+    .nav-links a {
+        margin-left: 30px; 
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000; 
+        font-size: 16px;
+        font-weight: 700; 
+        padding: 5px;
+    }
+
+    .nav-links a:hover {
+        color: #046CC6; 
+    }
+
+    h1 {
+        font-size: 3em;
+        font-weight: 900; 
+    }
+    
+    h2 {
+        font-size: 1.6em; 
+    }
+
+    .date {
+        width: 400px; 
+    }
+
+    .date span {
+        font-size: 30px; 
+    }
+        
+    #a-register {
+        padding: 5px; 
+        color: #fff; 
+        background-color: #046CC6; 
+        font-weight: 700; 
+        border: 1.5px solid #046CC6; 
+        transition: background-color 0.2s ease-in-out;
+    }
+    
+    #a-register:hover {
+        background-color: rgb(228, 248, 255);  
+        color:#046CC6; 
+    }
+
+    .about-trainer {
+        box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+        transition: transform 0.5s ease-in-out;
+        will-change: transform;  
+    }
+    
+    .about-trainer:hover {
+        transform: translateY(-2%);
+    }
+
+    .register-mail:hover {
+        color: rgb(180, 162, 129); 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 960px; 
+        margin: 0 auto; 
+    }
+
+    .benefit {
+        width: 768px; 
+    }
+}
